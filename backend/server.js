@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/", (req, res) => {
-    console.log("masuk")
+    console.log("masuks")
     const qry = "SELECT * FROM Admin"
     db.query(qry, (err, data) => {
         if (err) {

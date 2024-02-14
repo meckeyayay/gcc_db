@@ -2,6 +2,7 @@ import Admin from "../model/AdminModel.js"
 
 export const getUsers = async(req, res) => {
     try {
+        console.log(5)
         const response = await Admin.findAll();
         res.status(200).json(response)
         console.log(2)
